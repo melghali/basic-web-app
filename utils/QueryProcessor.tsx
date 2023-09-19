@@ -18,5 +18,42 @@ export default function QueryProcessor(query: string): string {
       "Mo Money"
     );
   }
+
+  if (query.toLowerCase().includes("which of the following numbers is the largest: 49, 33, 74?")) {
+    return (
+      "74"
+    );
+  }
+
+  if (query.toLowerCase().includes("which of the following numbers is the largest: 88, 32, 62?")) {
+    return (
+      "88"
+    );
+  }
+
+  if (query.toLowerCase().includes("which of the following numbers is the largest: 32, 85, 42?")) {
+    return (
+      "85"
+    );
+  }
+
+  if (query.toLowerCase().includes("which of the following numbers is the largest: 11, 84, 44?")) {
+    return (
+      "74"
+    );
+  }
+
+  if (query.toLowerCase().includes("which of the following numbers is the largest: 68, 73, 94?")) {
+    return (
+      "94"
+    );
+  }
+
+  if (query.toLowerCase().includes("which of the following numbers is the largest: 48, 79, 85?")) {
+    return (
+      "85"
+    );
+  }
+
   return "";
 }

@@ -34,4 +34,12 @@ describe("QueryProcessor", () => {
             "Mo Money"
           ));
     });
+
+    test('should return plus', () => {
+        const query = "what is 31 plus 4?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "35"
+          ));
+    });
 });
